@@ -5,11 +5,12 @@ with open('iris_classifier.pickle','rb') as f:
     clf = pickle.load(f)
 
 def main():
-    st.title('Chào mừng bạn đến với các dự đoán của IRIS')
+    st.title('(^_^)__Hello You, Tôi là Bảo đây!!__(^_^)')
+    st.subheader('Come on!! Hãy dự đoán tên loài hoa thuộc dòng IRIS cùng tôi nào!!')
 
-    st.title('Vui lòng nhập số đo hoa của bạn dưới đây:')
-    SL = st.number_input('Chiều dài Sepal')
-    SW = st.number_input('Chiều rộng Sepal')
+    st.header('Vui lòng nhập số đo mà bạn dự đoán dưới đây:')
+    SL = st.number_input('Chiều dài đài hoa')
+    SW = st.number_input('Chiều rộng đài hoa')
     PL = st.number_input('Chiều dài cánh hoa')
     PW = st.number_input('Chiều rộng cánh hoa')
 
@@ -17,11 +18,11 @@ def main():
     	result = clf.predict([[SL,SW,PL,PW]])
 
     	if result == 0:
-    		st.success('Setosa')
+    		st.success('Hey! Kết quả là Setosa,Giỏi lắm!')
     	elif result == 1:
-    		st.success('Versicolor')
+    		st.success('Yeah! Kết quả là Versicolor,Tuyệt vời!')
     	else:
-    		st.success('Virginica')
+    		st.success('Yess! Kết quả là Virginica,Hoàn hảo!')
     		
 if __name__=='__main__':
     main()

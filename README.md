@@ -1,7 +1,7 @@
-echo "# streamlit-to-heroku-tutorial" >> README.md 
-git init 
-git add README.md 
-git commit -m "first commit" 
-git branch -M master 
-git remote add origin https://github.com/lienchibao1998/ streamlit-to-heroku-tutorial.git 
-git push -u origin master
+# Iris Prediction web app deployed on Heroku
+The web app was built in Python using the following libraries:
+* streamlit
+* pandas
+* numpy
+* scikit-learn
+* pickle

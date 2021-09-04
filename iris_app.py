@@ -8,7 +8,7 @@ def main():
     st.title('(^_^)__Hello You, Tôi là Bảo đây!!__(^_^)')
     st.subheader('Come on!! Hãy dự đoán tên loài hoa thuộc dòng IRIS cùng tôi nào!!')
 
-    st.header('Vui lòng nhập số đo mà bạn dự đoán dưới đây:')
+    st.text('Vui lòng nhập số đo mà bạn dự đoán dưới đây:')
     SL = st.number_input('Chiều dài đài hoa')
     SW = st.number_input('Chiều rộng đài hoa')
     PL = st.number_input('Chiều dài cánh hoa')

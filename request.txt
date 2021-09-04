@@ -1,3 +1,8 @@
 pickle
 streamlit
 DecisionTreeClassifier
+sklearn
+pandas
+numpy
+matplotlib
+seaborn
